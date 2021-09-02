@@ -1,0 +1,92 @@
+*,
+*:before,
+*:after
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+* input
+    outline: none
+
+body
+    font-family: sans-serif
+    background: rgb(198,21,191)
+    background: linear-gradient(90deg, rgba(198,21,191,1) 0%, rgba(124,64,154,1) 31%, rgba(49,200,180,1) 67%, rgba(0,212,255,1) 100%)
+
+.top
+    text-align: center
+    padding-top: 20px
+    margin-bottom: 20px
+    .date-span
+        color: white
+        font-size: 24px
+        margin-right: 100px
+        border: 1px solid #56a8df
+        padding: 12px 18px
+        border-radius: 14px
+        background-color: #56a8df
+        cursor: pointer
+
+    .timer-span
+        font-size: 24px
+        color: white
+        border: 1px solid #56a8df
+        padding: 12px 18px
+        border-radius: 14px
+        background-color: #56a8df
+        cursor: pointer
+
+.sec-main
+    width: 100%
+    height: 80vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    #dateCalc-form
+        display: flex
+        flex-direction: column
+        label
+            color: #fff
+            font-size: 24px
+        input
+            border: 0
+            padding: 12px 18px
+            border-radius: 12px
+            margin-bottom: 12px
+        button
+            width: 205px
+            margin: 0 auto
+            padding: 12px 14px
+            border: none
+            border-radius: 12px
+            cursor: pointer
+    #timer-form
+        display: flex
+        flex-direction: column
+        h1
+            text-align: center
+            border: 1px solid white
+            padding: 12px
+            border-radius: 12px
+            color: white
+            margin-bottom: 10px
+        label
+            display: flex
+            flex-direction: column
+            text-align: center
+            color: white
+            font-size: 20px
+            margin-bottom: 5px
+            input
+                padding: 10px
+        button
+            margin-top: 10px
+            border: none
+            padding: 15px
+            text-transform: uppercase
+            font-weight: 600
+            border-radius: 12px
+
+.invise
+    display: none

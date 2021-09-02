@@ -6,38 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ModulesJS</title>
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js" type="module"></script>
 </head>
 
 <body>
-    <div class="date-Calc">
-        <form id="dateCalc-form">
-            <h3>Калькулятор дат</h3>
-
-            <label>
+    <section class="top">
+        <span class="date-span" id="date-span">Калькулятор дат</span>
+        <span class="timer-span" id="timer-span">Таймер</span>
+    </section>
+    <section class="sec-main">
+        <div class="date-Calc invise" id="date-Calc">
+            <form id="dateCalc-form">
+                <label>
             <strong>Первая дата</strong>
             <input type="date" name="firstDate">
         </label>
-            <label>
+                <label>
             <strong>Вторая дата</strong>
             <input type="date" name="secondDate">
         </label>
-            <button>Расчитать промежуток</button>
-            <div id="dateCalc-result"></div>
-        </form>
-    </div>
-    <div class="timer">
-        <h1 id="time-display"></h1>
-        <form id="timer-form">
-            <label>Введите время
+                <button>Расчитать промежуток</button>
+                <div id="dateCalc-result"></div>
+            </form>
+        </div>
+        <div class="timer invise" id="timer">
+            <form id="timer-form">
+                <h1 id="time-display"></h1>
+                <label>Введите время
                     <input type="text" id="timer-input">
                 </label>
-            <button id="enter-btn">Ввести</button>
-            <button id="start-btn">Старт</button>
-            <button id="stop-btn">Стоп</button>
-            <div id="error-text"></div>
-        </form>
-    </div>
+                <button id="start-btn">Старт</button>
+                <button id="stop-btn">Стоп</button>
+                <div id="error-text"></div>
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>
