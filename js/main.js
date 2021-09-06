@@ -1,6 +1,8 @@
 import './dateCalc.js';
 import { timer } from "./timer.js";
 import './toggle.js';
+import "../css/main.sass"
+import "../media/beep.mp3"
 
 
 const timerForm = document.getElementById('timer-form');
